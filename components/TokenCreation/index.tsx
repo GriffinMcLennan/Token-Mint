@@ -125,7 +125,7 @@ const TokenCreation = () => {
                 status: "error",
                 description: errorMsg,
             });
-            setTransactionStatus(COMPLETE);
+            setTransactionStatus(WAITING);
         }
     };
 
