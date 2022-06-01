@@ -23,7 +23,7 @@ const TokenCreation = () => {
     const [transactionStatus, setTransactionStatus] = useState(WAITING);
     const [mintKeypair, setMintKeypair] = useState(Keypair.generate());
     const [prefix, setPrefix] = useState("");
-    const [decimals, setDecimals] = useState(0);
+    const [decimals, setDecimals] = useState(9);
     const [mintAmount, setMintAmount] = useState(0);
     const [freezeAuthority, setFreezeAuthority] = useState("");
 
@@ -187,6 +187,7 @@ const TokenCreation = () => {
                     width="100%"
                     defaultValue={""}
                     maxLength={44}
+                    value={freezeAuthority}
                     onChange={(e) => setFreezeAuthority(e.target.value)}
                     placeholder="Optional"
                 />
