@@ -188,6 +188,7 @@ const TokenCreation = () => {
                     defaultValue={""}
                     maxLength={44}
                     onChange={(e) => setFreezeAuthority(e.target.value)}
+                    placeholder="Optional"
                 />
             </Flex>
 
